@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block main %}
+<div class="box">
+    <div class="inner-top-box">
+    <br><br>
+        <div class="img-div">
+            <img src="{{url_for('static', filename='me.JPG')}}"/>
+        </div>
+        <h1 class="name">Ashleigh Barker</h1>
+        <h5>
+            @leighiam<br>
+            Montego Bay, Jamaica<br>
+            <p>{{ joined }}</p>
+        </h5>
+    </div>
+    <div class="inner-bottom-box">
+        <br>
+        <div class="description-box">
+        <p>
+            <h5>I am a smart and talented young woman who loves web design and development.<br>
+            Contact me if you'd like to work tgether on a new project.</h5>
+        </p>
+        </div>
+        <table class="table-box">
+            <tr>
+                <td><h3>7</h3></td>
+                <td><h3>100</h3></td>
+                <td><h3>250</h4></td>
+            </tr>
+            <tr>
+                <td><h5>Posts</h5></td>
+                <td><h5>Following</h5></td>
+                <td><h5>Followers</h5></td>
+            </tr>
+        </table>
+        <button id="button">Follow</button>
+    </div>
+</div>
+{% endblock %}
