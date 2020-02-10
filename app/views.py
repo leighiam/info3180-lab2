@@ -34,7 +34,7 @@ def profile():
 
 def format_date_joined():
     now = datetime.datetime.now()
-    date_joined = datetime.date(2019, 2, 2)
+    date_joined = datetime.date(2020, 2, 2)
     joined = "Joined " + date_joined.strftime("%b, %y")
     return joined
 
